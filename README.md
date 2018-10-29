@@ -17,8 +17,10 @@ We change the 255 of YOLOLayer output which turned out to be 255(3*(1+4+num_clas
 2. We change the label rectangle format from (centerx1, centerx2, width, height) to (top-left-x, top-left-y, bottom-right-x, bottom-right-y). Because we generally rect object using top-left and bottom-right as ccordinate. In dataloader.py, we will convert ccordinate to yolov3 needed format.
 
 # Result
-In FDDB val dataset, we can get compute average precision is 98%. But face detection doesn't work well. Maybe overfit used yolov3 for FDDB.  
-
+In FDDB val dataset, we can get compute average precision is 98%. But face detection doesn't work well. Maybe YOLOLayer we changed not well or overfit used yolov3 for FDDB database.  
+![image](https://github.com/XPping/yolov3-faceDetect/raw/master/result/2002_07_19_big_img_209.jpg) 
+![image](https://github.com/XPping/yolov3-faceDetect/raw/master/result/2002_07_21_big_img_744.jpg) 
+![image](https://github.com/XPping/yolov3-faceDetect/raw/master/result/2002_07_25_big_img_722.jpg) 
 
 # Reference code
 https://github.com/eriklindernoren/PyTorch-YOLOv3  
