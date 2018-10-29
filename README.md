@@ -1,5 +1,5 @@
 # yolov3-faceDetect
-Used yolov3 to implement face detect  
+Used yolov3 to implement face detection  
 
 # Environment
 Python3.5+Pytorch4.0  
@@ -9,8 +9,8 @@ FDDB database
 COCO database
 
 # Model
-We use yolov3 pretrained in COCO databse to implement face detect in FDDB database. 
-We change the 255 of YOLOLayer output which turned out to be 255(3*(1+4+num_class=80)=255) to 18, in face detect num_class=1.
+We use yolov3 pretrained in COCO databse to implement face detection in FDDB database. 
+We change the 255 of YOLOLayer output which turned out to be 255(3*(1+4+num_class=80)=255) to 18, in face detection num_class=1.
 
 # Attention
 1. We load dataset information from ArgumentParser instead of coco.data.  
