@@ -19,7 +19,8 @@ class MyDataset(Dataset):
             [train/00001.jpg, train/00002.jpg, ...];
         :param image_rects_path: the directory path of the obeject rectange, Eg. image_path="train_rects",
             the directory like  [train_rects/00001.txt, train_rects/00002.txt, ...]
-            each line in xxxxx.txt is [tag top left bottom right\ntag top left bottom right...];tag from 0, split by \n
+            each line in xxxxx.txt is [tag top-left-x, top-left-y, bottom-right-x, bottom-right-y\ntag top-left-x, 
+            top-left-y, bottom-right-x, bottom-right-y...];tag from 0, split by \n
         :param transform: torchvision.transfomrs.
         """
         self.image_path = image_path
