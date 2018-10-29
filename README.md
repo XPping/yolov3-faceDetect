@@ -1,5 +1,5 @@
 # yolov3-faceDetect
-Use yolov3 to implement face detect  
+Used yolov3 to implement face detect  
 
 # Environment
 Python3.5+Pytorch4.0  
@@ -15,6 +15,10 @@ We change the 255 of YOLOLayer output which turned out to be 255(3*(1+4+num_clas
 # Attention
 1. We load dataset information from ArgumentParser instead of coco.data.  
 2. We change the label rectangle format from (centerx1, centerx2, width, height) to (top-left-x, top-left-y, bottom-right-x, bottom-right-y). Because we generally rect object using top-left and bottom-right as ccordinate. In dataloader.py, we will convert ccordinate to yolov3 needed format.
+
+# Result
+In FDDB val dataset, we can get compute average precision is 98%. But face detection doesn't work well. Maybe overfit used yolov3 for FDDB.  
+
 
 # Reference code
 https://github.com/eriklindernoren/PyTorch-YOLOv3  
